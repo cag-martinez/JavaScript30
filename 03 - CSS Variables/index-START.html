@@ -61,6 +61,16 @@
   </style>
 
   <script>
+
+    const controls = document.querySelectorAll('.controls input'); //call the class controls - input and pass it as controls
+
+    function handleUpdate(){
+      console.log(this.value) 
+    }
+
+    controls.forEach(input => input.addEventListener('change', handleUpdate));
+    controls.forEach(input => input.addEventListener('mousemover', handleUpdate));
+
   </script>
 
 </body>
